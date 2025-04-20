@@ -1,0 +1,608 @@
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    background-color: pink;
+}
+.banner .aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8);
+}
+.banner .aside li{
+    height: 50px;
+    line-height: 50px;
+}
+.banner .aside li a{
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    padding-right: 19px;
+    height: 50px;
+    color: #fff;
+}
+.banner .aside li a span{
+    margin-left: 15px;
+    font-size: 14px;
+}
+.banner .aside li a:hover{
+    background-color: #27ba9b;
+}
+.banner .aside li a::after{
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+.prev,
+.next{
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+}
+.prev{
+    left: 260px;
+    background-position: 14px -60px;
+}
+.next{
+    right: 10px;
+    background-position: -22px -60px;
+}
+/* 圆点 */
+.banner ol{
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    height: 10px;
+
+}
+.banner ol li{
+    float:left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner ol li .current{
+    background-color: #fff;
+}
+/* 新鲜好物 */
+.goods .hd,
+.popular .hd,
+.brand .hd,
+.topic .hd{
+    height: 114px;
+    line-height: 114px;
+}
+.goods .hd h2,
+.popular .hd h2,
+.topic .hd h2{
+    float: left;
+    height: 114px;
+    font-size: 29px;
+    font-weight: 400;
+}
+.goods .hd h2 span,
+.popular .hd h2 span,
+.brand .hd h2 span{
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a,
+.shengxian .hd .more,
+.clothes .hd .more,
+.kitchen .hd .more,
+.home .hd .more,
+.topic .hd .more{
+    float: right;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a::after,
+.shengxian .hd .more::after,
+.clothes .hd .more::after,
+.kitchen .hd .more::after,
+.home .hd .more::after,
+.topic .hd .more::after{
+    content: '';
+    display: inline-block;
+    margin-left: 13px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+.goods .bd li,
+.popular .bd li{
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+.popular .bd li{
+    background-color: #fff;
+}
+.goods .bd li:last-child,
+.popular .bd li:last-child{
+    margin-right: 0;
+}
+.goods .bd li img,
+.popular .bd li img{
+    width: 304px;
+}
+.goods .bd li h3,
+.popular .bd li h3{
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.goods .bd li div{
+    color: #9a2e1f;
+    font-size: 17px;
+}
+.goods .bd li span{
+    font-size: 23px;
+}
+.goods .bd li b{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* 人气推荐 */
+.popular .bd li p{
+    color: #999;
+}
+/* 热门品牌 */
+.brand{
+    height: 466px;
+    background-color: #f5f5f5;
+}
+.brand .hd{
+    position: relative;
+}
+.brand .hd h2,
+.topic .hd h2{
+    height: 114px;
+    font-size: 29px;
+    font-weight: 400;
+}
+.brand .hd .pre{
+    position: absolute;
+    right: 33px;
+    bottom: 16px;
+    width: 20px;
+    height: 20px;
+    background-color: #e2e2e2;
+    background-image: url(../images/sprites.png);
+    background-position: -33px -106px;
+    transform: rotate(180deg);
+}
+.brand .hd .back{
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    width: 20px;
+    height: 20px;
+    background-color: #e2e2e2;
+    background-image: url(../images/sprites.png);
+    background-position: -33px -107px;
+}
+.brand .hd a:hover{
+    background-color:#27ba9b ;
+}
+.brand .bd li{
+    float: left;
+    margin-right: 5px;
+}
+.brand .bd li:last-child{
+    margin-right: 0;
+}
+ .brand .bd li img{
+    width: 244px;
+ }
+/* 生鲜 */
+.shengxian .hd,
+.clothes .hd,
+.kitchen .hd,
+.home .hd{
+    height: 96px;
+    line-height: 96px;
+}
+.shengxian .hd h2,
+.clothes .hd h2,
+.kitchen .hd h2,
+.home .hd h2{
+    float: left;
+    font-size: 29px;
+    font-weight:400;
+}
+.shengxian .hd .more,
+.clothes .hd .more,
+.kitchen .hd .more,
+.home .hd .more{
+    float: right; 
+}
+.shengxian .hd ul,
+.clothes .hd ul,
+.kitchen .hd ul,
+.home .hd ul{
+    float: right;
+    margin-right: 52px;
+}
+.shengxian .hd li,
+.clothes .hd li,
+.kitchen .hd li,
+.home .hd li{
+    float: left;
+}
+.shengxian .hd li a,
+.clothes .hd li a,
+.kitchen .hd li a,
+.home .hd li a{
+    padding: 2px 7px;
+    margin-right: 6px;
+}
+.shengxian .hd li a:hover,
+.shengxian .hd li .current,
+.clothes .hd li a:hover,
+.clothes .hd li .current,
+.kitchen .hd li a:hover,
+.kitchen .hd li .current,
+.home .hd li a:hover,
+.home .hd li .current{
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+.shengxian .bd .left,
+.clothes .bd .left,
+.kitchen .bd .left,
+.home .bd .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+.shengxian .bd .right,
+.clothes .bd .right,
+.kitchen .bd .right,
+.home .bd .right{
+    float: left;
+    width: 1000px;
+    height: 610px;
+}
+.shengxian .bd .right li,
+.clothes .bd .right li,
+.kitchen .bd .right li,
+.home .bd .right li{
+    float: left;
+    margin-left: 8px;
+    width: 242px;
+    height: 304px;
+    border: 2px solid transparent; 
+    
+}
+.shengxian .bd .right a,
+.clothes .bd .right a,
+.kitchen .bd .right a,
+.home .bd .right a{
+    position: relative;
+    width: 242px;
+    height: 304px;
+}
+.shengxian .bd .right li:hover,
+.clothes .bd .right li:hover,
+.kitchen .bd .right li:hover,
+.home .bd .right li:hover{
+    border-color:  #27ba9b; 
+}
+.shengxian .bd .right li:nth-child(-n+4),
+.clothes .bd .right li:nth-child(-n+4),
+.kitchen .bd .right li:nth-child(-n+4),
+.home .bd .right li:nth-child(-n+4){
+    margin-bottom: 3px;
+}
+.shengxian .bd .right li a img,
+.clothes .bd .right li a img,
+.kitchen .bd .right li a img,
+.home .bd .right li a img{
+    margin: 8px 29px 12px;
+    width: 184px;
+}
+.shengxian .bd .right li a h3,
+.clothes .bd .right li a h3,
+.kitchen .bd .right li a h3,
+.home .bd .right li a h3{
+    padding-left: 29px;
+    padding-right: 47px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.shengxian .bd .right li a div,
+.clothes .bd .right li a div,
+.kitchen .bd .right li a div,
+.home .bd .right li a div{
+    padding-left: 29px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #9a2e1f;
+}
+.shengxian .bd .right li a div span,
+.clothes .bd .right li a div span,
+.kitchen .bd .right li a div span,
+.home .bd .right li a div span{
+    font-size: 22px;
+}
+.shengxian .bd .right li a .box,
+.clothes .bd .right li a .box,
+.kitchen .bd .right li a .box,
+.home .bd .right li a .box{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 242px;
+    height: 84px;
+    background-color:#27ba9b;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+}
+.shengxian .bd .right li a .box p,
+.clothes .bd .right li a .box p,
+.kitchen .bd .right li a .box p,
+.home .bd .right li a .box p{
+    margin-top: 19px;
+}
+.shengxian .bd .right li a .box span,
+.clothes .bd .right li a .box span,
+.kitchen .bd .right li a .box span,
+.home .bd .right li a .box span{
+    display: block;
+    margin-left: 60px;
+    padding-top: 8px;
+    width: 125px;
+    height: 28px;
+    border-top: 2px solid #a9dbcc;
+    font-size: 13px;
+}
+.shengxian .bd .right li:hover .box,
+.clothes .bd .right li:hover .box,
+.kitchen .bd .right li:hover .box,
+.home .bd .right li:hover .box{
+    opacity: 1;
+}
+/* 服饰 */
+.clothes .bd .left img,
+.kitchen .bd .left img,
+.home .bd .left img{
+    width: 240px;
+}
+/* 居家 */
+.home .bd .right li img:first-child,
+.home .bd .right li img:last-child{
+    width: 184px;
+    height: 184px;
+}
+/* 最新专题 */
+.topic{
+    margin-top: 53px;
+    height: 512px;
+    background-color: #f5f5f5;
+}
+.topic .bd ul{
+    height: 398px;
+}
+.topic .bd li{
+    float: left;
+    position: relative;
+    margin-right: 13px;
+    width: 404px;
+    height: 356px;
+    background-color: #fff;
+}
+.topic .bd li:last-child{
+    margin-right: 0;
+} 
+.topic .bd a{
+    width: 406px;
+    height: 356px;
+    background-color: #fff;
+}
+.topic .bd li img{
+    width: 406px;
+}
+.topic .bd li p{
+    position: absolute;
+    left: 15px;
+    bottom: 84px;
+    color: #fff;
+    font-size: 20px;
+}
+.topic .bd li p span{
+    font-size: 16px;
+    color: #999;
+}
+.topic .bd li .first::before{
+    content: '';
+    display: inline-block;
+    margin-top: 26px;
+    margin-left: 17px;
+    width: 15px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -110px;
+}
+.topic .bd li:nth-child(2) .first::before{
+    background-position: -240px -110px;
+}
+.topic .bd li .middle::before{
+    content: '';
+    display: inline-block;
+    margin-left: 24px;
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -110px;
+}
+.topic .bd li .last::before{
+    content: '';
+    display: inline-block;
+    margin-left: 174px;
+    width: 16px; 
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -200px -110px;
+    vertical-align: middle;
+}
+.topic .bd li b{
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    bottom: 96px;
+    width: 81px;
+    height: 27px;
+    background-color: #fff;
+    color: #9a2e1f;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+.topic .bd li b span{
+    font-size: 17px;
+}
+/* 客户反馈 */
+.customer{
+    height: 300px;
+}
+.customer li{
+    float: left;
+    margin-top: 78px;
+    width: 310px; 
+    height: 222px;
+}
+.customer li h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    text-align: center;
+} 
+.customer li div{
+    margin:35px 59px;
+}
+.customer li a{
+    position: relative;
+    display: inline-block;
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.customer li a ::before{
+    content: '';
+    position: absolute;
+    left: 32px;
+    top: 22px;
+    width: 29px;
+    height: 27px;
+    background-image: url(../images/sprites.png);
+}
+.customer li a:first-child ::before{
+    background-position: -250px -70px;
+}
+.customer li a:last-child ::before{
+    background-position: -350px -70px;
+}
+.customer li a span{
+    display: inline-block;
+    margin-top: 59px;
+    font-size: 14px;
+    color: #999;
+}
+.customer li:nth-child(2) a ::before{
+    left: 29px;
+    width: 36px;
+    height: 29px;
+}
+.customer li:nth-child(2) a:first-child ::before{
+    background-position: -205px -15px;
+}
+.customer li:nth-child(2) a:last-child ::before{
+    background-position: -350px -15px;
+}
+.customer li:nth-child(3) div{
+    position: relative;
+    float: left;
+    margin-left: 34px;
+    margin-right: 10px;
+    width: 116px;
+    height: 116px;
+    border: 2px solid #f4f4f4;
+}
+.customer li:nth-child(3) div img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 105px;
+    height: 103px;
+}
+.customer li:nth-child(3) div:last-child{
+    margin-left: 0;
+    margin-right: 34px;
+    text-align: center;
+    border: none;
+}
+.customer li:nth-child(3) div:last-child p{
+    margin-top: 13px;
+    font-size: 14px;
+    color: #999;
+}
+.customer li:nth-child(3) div:last-child button{
+    margin-top: 18px;
+    background-color: #27ba9b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.customer li:nth-child(4) p{
+    margin-top: 58px;
+    font-size: 22px;
+    color: #666;
+    text-align: center;
+}
+.customer li:nth-child(4) p span{
+    font-size: 15px;
+    color: #999;
+}
+
+
+
